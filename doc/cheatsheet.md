@@ -209,3 +209,10 @@ Misc
 **:so ~/.vimrc**: Reloading config without restarting
 
 **U**: Transform selection to uppercase
+
+
+Custom Map Commands
+-------------------
+
+**<F2>**: Save document
+

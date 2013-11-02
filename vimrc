@@ -37,12 +37,14 @@ call pathogen#infect()
 " F3 for :tabnew
 map <F3> :tabnew
 
-" Paste and nopaste
-set pastetoggle=<F4>
 
-" F7 toggling tag list tab for source browsing
-map <F7> :TagbarToggle<CR>
-let g:tagbar_left = 1
+
+
+imap <C-v> <Esc>"+gP
+vmap <C-x> "+x
+vmap <C-y> "+y
+
+
 
 " Calling to 'git status' through 'fugitive' plugin
 map <F8> :Gstatus<CR>
