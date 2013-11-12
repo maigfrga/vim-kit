@@ -36,7 +36,8 @@ call pathogen#infect()
 
 " F3 for :tabnew
 map <F3> :tabnew
-
+map <F4> :split
+map <F5> :vsplit
 
 
 
