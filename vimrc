@@ -45,6 +45,12 @@ imap <C-v> <Esc>"+gP
 vmap <C-x> "+x
 vmap <C-y> "+y
 
+"remap tab navigation
+imap <S-Left> <Esc>:tabprevious<CR>i
+map <S-Left> :tabprevious<CR>
+
+imap <S-Right> <Esc>:tabprevious<CR>i
+map <S-Right> :tabprevious<CR>
 
 
 " Calling to 'git status' through 'fugitive' plugin
@@ -55,9 +61,6 @@ map <F8> :Gstatus<CR>
 map <c-Space> :FufCoverageFile<CR>
 map <C-@> :FufCoverageFile<CR>
 
-" Save file as 'root'
-" Make sure Defaults requiretty is not set in your sudoers file
-command W w !sudo tee %
 
 " Run PEP8
 let g:pep8_map='<F6>'
