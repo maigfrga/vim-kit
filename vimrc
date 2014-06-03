@@ -58,14 +58,14 @@ imap <S-Right> <Esc>:tabnext<CR>i
 map <S-Right> :tabnext<CR>
 
 "remap window navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-imap <silent> <A-Up> :wincmd k<CR>i
-imap <silent> <A-Down> :wincmd j<CR>i
-imap <silent> <A-Left> :wincmd h<CR>i
-imap <silent> <A-Right> :wincmd l<CR>i
+nmap <S-A-Up> :wincmd k<CR>
+nmap <S-A-Down> :wincmd j<CR>
+nmap <S-A-Left> :wincmd h<CR>
+nmap <S-A-Right> :wincmd l<CR>
+imap <S-A-Up> <Esc>:wincmd k<CR>i
+imap <S-A-Down> <Esc>:wincmd j<CR>i
+imap <S-A-Left> <Esc>:wincmd h<CR>i
+imap <S-A-Right> <Esc>:wincmd l<CR>i
 
 
 
