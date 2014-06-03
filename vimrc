@@ -1,9 +1,9 @@
 "-------------------------------
-"   bsnux configuration for Vim
+"   maigfrga configuration for Vim
 "-------------------------------
 
 " Basic configuration
-set nu
+set nu  " Line numbers
 set nobackup
 syntax on
 
@@ -36,11 +36,16 @@ call pathogen#infect()
 
 " F3 for :tabnew
 map <F3> :tabnew
-map <F4> :split
-map <F5> :vsplit
+imap <F3> :tabnew
+
+" Remap horizontal and vertical Splits
+map <F4> :split<CR>
+map <F5> :vsplit<CR>
+imap <F4> :split<CR>i
+imap <F5> :vsplit<CR>i
 
 
-
+"Remap copy paste from clipboard
 imap <C-v> <Esc>"+gP
 vmap <C-x> "+x
 vmap <C-y> "+y
@@ -49,8 +54,20 @@ vmap <C-y> "+y
 imap <S-Left> <Esc>:tabprevious<CR>i
 map <S-Left> :tabprevious<CR>
 
-imap <S-Right> <Esc>:tabprevious<CR>i
-map <S-Right> :tabprevious<CR>
+imap <S-Right> <Esc>:tabnext<CR>i
+map <S-Right> :tabnext<CR>
+
+"remap window navigation
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
+
+
+"map list buffers
+imap <C-b> <Esc>:buffers<CR>
+map <C-b> :buffers<CR>
 
 
 " Calling to 'git status' through 'fugitive' plugin
