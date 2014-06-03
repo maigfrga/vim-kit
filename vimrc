@@ -62,6 +62,10 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+imap <silent> <A-Up> :wincmd k<CR>i
+imap <silent> <A-Down> :wincmd j<CR>i
+imap <silent> <A-Left> :wincmd h<CR>i
+imap <silent> <A-Right> :wincmd l<CR>i
 
 
 
