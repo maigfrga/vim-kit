@@ -77,6 +77,9 @@ imap <S-A-Right> <Esc>:wincmd l<CR>i
 imap <C-b> <Esc>:buffers<CR>
 map <C-b> :buffers<CR>
 
+"map edit promp
+imap <C-e> <Esc>:edit
+map <C-e> :edit
 
 " Calling to 'git status' through 'fugitive' plugin
 map <F8> :Gstatus<CR>
