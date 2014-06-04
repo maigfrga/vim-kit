@@ -36,19 +36,23 @@ call pathogen#infect()
 
 " F3 for :tabnew
 map <F3> :tabnew
-imap <F3> :tabnew
-
+imap <F3> <Esc>:tabnew
 " Remap horizontal and vertical Splits
 map <F4> :split<CR>
 map <F5> :vsplit<CR>
-imap <F4> :split<CR>i
-imap <F5> :vsplit<CR>i
+imap <F4> <Esc>:split<CR>i
+imap <F5> <Esc>:vsplit<CR>i
 
 
 "Remap copy paste from clipboard
-imap <C-v> <Esc>"+gP
-vmap <C-x> "+x
-vmap <C-y> "+y
+imap <C-p> <Space><Esc>"+gP<CR>i
+map <C-p> i<Space><Esc>"+gP<CR>i
+
+"Remap cut to clipboard
+vmap <C-x> "+x<CR>
+
+"Remap copy to clipboard
+vmap <C-y> "+y<CR>
 
 "remap tab navigation
 imap <S-Left> <Esc>:tabprevious<CR>i
