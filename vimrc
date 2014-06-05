@@ -45,8 +45,8 @@ imap <F5> <Esc>:vsplit<CR>i
 
 
 "Remap copy paste from clipboard
-imap <C-p> <Space><Esc>"+gP<CR>i
-map <C-p> i<Space><Esc>"+gP<CR>i
+imap <C-S-p> <Space><Esc>"+gP<CR>i
+map <C-S-p> i<Space><Esc>"+gP<CR>i
 
 "Remap cut to clipboard
 vmap <C-x> "+x<CR>
