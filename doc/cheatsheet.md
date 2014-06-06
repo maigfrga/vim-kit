@@ -216,3 +216,18 @@ Custom Map Commands
 
 **<F2>**: Save document
 
+**<F3>**: tabnew
+
+**<F4>**: split
+
+**<F5>**: vsplit
+
+**<C-S-p>**: paste from clipboard
+
+**<C-x>** cut to clipboard
+
+**<C-y>** copy to clipboard
+
+**<S-Left>** previous tab
+
+**<S-Right>** next tab

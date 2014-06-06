@@ -37,16 +37,16 @@ call pathogen#infect()
 " F3 for :tabnew
 map <F3> :tabnew
 imap <F3> <Esc>:tabnew
+
 " Remap horizontal and vertical Splits
 map <F4> :split<CR>
 map <F5> :vsplit<CR>
 imap <F4> <Esc>:split<CR>i
 imap <F5> <Esc>:vsplit<CR>i
 
-
 "Remap copy paste from clipboard
-imap <C-S-p> <Space><Esc>"+gP<CR>i
-map <C-S-p> i<Space><Esc>"+gP<CR>i
+imap <C-S-p> <Esc>"+gP<CR>i
+map <C-S-p> i<Esc>"+gPi
 
 "Remap cut to clipboard
 vmap <C-x> "+x<CR>
@@ -71,8 +71,6 @@ imap <S-A-Down> <Esc>:wincmd j<CR>i
 imap <S-A-Left> <Esc>:wincmd h<CR>i
 imap <S-A-Right> <Esc>:wincmd l<CR>i
 
-
-
 "map list buffers
 imap <C-b> <Esc>:buffers<CR>
 map <C-b> :buffers<CR>
@@ -80,6 +78,17 @@ map <C-b> :buffers<CR>
 "map edit promp
 imap <C-e> <Esc>:edit
 map <C-e> :edit
+
+"map go begin and end line
+map <A-Left> <Home>
+imap <A-Left> <Home>
+
+map <A-Right> <End>
+imap <A-Right> <End>
+
+
+"map undo and redo
+imap <A-u> <Esc>:u
 
 " Calling to 'git status' through 'fugitive' plugin
 map <F8> :Gstatus<CR>
