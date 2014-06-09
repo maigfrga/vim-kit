@@ -45,7 +45,7 @@ imap <F4> <Esc>:split<CR>i
 imap <F5> <Esc>:vsplit<CR>i
 
 "Remap copy paste from clipboard
-imap <C-S-p> <Esc>"+gP<CR>i
+inoremap <C-S-p> <Esc>"+gP<CR>i
 map <C-S-p> i<Esc>"+gPi
 
 "Remap cut to clipboard
@@ -89,6 +89,10 @@ imap <A-Right> <End>
 
 "map undo and redo
 imap <A-u> <Esc>:u
+
+"map close buffer
+noremap <C-x> :close<CR>
+inoremap <C-x> <Esc>:close<CR>
 
 " Calling to 'git status' through 'fugitive' plugin
 map <F8> :Gstatus<CR>
