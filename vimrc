@@ -94,6 +94,11 @@ imap <A-u> <Esc>:u
 noremap <C-x> :close<CR>
 inoremap <C-x> <Esc>:close<CR>
 
+
+"map select all
+imap <C-a> <Esc>ggVG
+map <C-a> ggVG
+
 " Calling to 'git status' through 'fugitive' plugin
 map <F8> :Gstatus<CR>
 
