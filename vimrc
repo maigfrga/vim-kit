@@ -72,8 +72,8 @@ imap <S-A-Left> <Esc>:wincmd h<CR>i
 imap <S-A-Right> <Esc>:wincmd l<CR>i
 
 "map list buffers
-imap <C-b> <Esc>:buffers<CR>
-map <C-b> :buffers<CR>
+imap <M-b> <Esc>:buffers<CR>
+map <M-b> :buffers<CR>
 
 "map edit promp
 imap <C-e> <Esc>:edit
