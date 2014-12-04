@@ -145,3 +145,4 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " Status line
 set statusline=%F\ [l=%L]\ [%p%%]\ [p=%03l,%03v]\ [b=%n]\ %{fugitive#statusline()}
 set laststatus=2
+
